@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import ProductView from "../../components/ProductView";
+import ProductView from "../../../components/ProductView";
 
 export default function ProductListPage() {
   const [products, setProducts] = React.useState([]);

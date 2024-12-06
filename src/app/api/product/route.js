@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import connectToDb from "./../../../../db";
+import connectToDb from "../../../../db";
 import { Product } from "../../../../models/products";
 
 export async function GET({ params }) {

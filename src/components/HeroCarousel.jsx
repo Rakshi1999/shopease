@@ -1,18 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tw-merge";
 import { Button } from "@headlessui/react";
 import { useRouter } from "next/navigation";
-
-import KidsFashionThumbnail from "../../../public/kids_fashion_thumbnail.jpg";
-import ElectronicsThumbnail from "../../../public/electronics_thumbnail.jpg";
-import BlackFridaySaleThumbnail from "../../../public/blackfriday_sale_thumbnail.jpg";
+import {
+  kidsFashionThumbnail,
+  electronicsThumbnail,
+  blackFridaySaleThumbnail,
+} from "../../public";
 
 const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: KidsFashionThumbnail,
+      image: kidsFashionThumbnail,
       title: "Checkout Latest Kids Fashion",
       subtitle: "Amazing Deals Awaits!!!",
       ctaText: "Explore Now",
@@ -21,7 +22,7 @@ const HeroCarousel = () => {
     },
     {
       id: 2,
-      image: ElectronicsThumbnail,
+      image: electronicsThumbnail,
       title: "Trending Electronic Accessories",
       subtitle: "30% off on selected items",
       ctaText: "Shop Now",
@@ -30,7 +31,7 @@ const HeroCarousel = () => {
     },
     {
       id: 3,
-      image: BlackFridaySaleThumbnail,
+      image: blackFridaySaleThumbnail,
       title: "Black Friday Sale is live",
       subtitle: "Up to 50% flat off on selected items",
       ctaText: "Checkout Now",

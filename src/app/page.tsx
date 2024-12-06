@@ -1,11 +1,13 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import HeroCarousel from "@/app/components/HeroCarousel";
-import ProductView from "./components/ProductView";
-import NewsLetter from "./components/NewsLetter";
-import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
+import {
+  HeroCarousel,
+  ProductView,
+  NewsLetter,
+  Testimonials,
+  Footer,
+} from "../components";
 import { Button } from "@headlessui/react";
 
 export default function Home() {

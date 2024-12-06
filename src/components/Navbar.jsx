@@ -21,6 +21,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 
 const navigation = {
   categories: [
@@ -154,6 +155,7 @@ const navigation = {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <div className="bg-white">
@@ -440,6 +442,7 @@ export default function Navbar() {
                 <a
                   href="#"
                   className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  onClick={() => router.push("/auth/login")}
                 >
                   Sign in
                 </a>
@@ -447,6 +450,7 @@ export default function Navbar() {
                 <a
                   href="#"
                   className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  onClick={() => router.push("/auth/signup")}
                 >
                   Create account
                 </a>
